@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Feed from './Feed.js';
+import Contact from './Contact.js';
 
-function App() {
+
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{backgroundColor:"pink", borderRadius: 20 ,  width: 400 ,marginLeft:"20px",padding:10}}>
+      <Contact  img="img.jpg" userName="Sonia leena" location="Dubai UAE" />
+      <Feed postImg="img.jpg" likedImg="img.jpg" likedBy="Anuv jain and 306 others" caption="you can never dull my sparkle" />
+    {/* <Feed img="img.jpg" userName="Sonia leena" location="Dubai UAE" postImg="img.jpg" likedImg="img.jpg" likedBy="Anuv jain and 306 others" caption="you can never dull my sparkle" /> */}
+    </div>
     </div>
   );
 }
