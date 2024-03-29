@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
         <Resume
-        name="Neha Dobariya"
+        name="Name Dobariya"
         skills="Communication.
          Customer-Oriented.
         Leadership Team Coordination.
